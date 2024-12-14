@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить товар | Магазин MM2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>MM2 Shop</h1>
+    </div>
+
+    <nav class="nav">
+        
+        <label for="burger-toggle" class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+
+        <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="products.html">Товары</a></li>
+            <li><a href="add-product.html">Добавить товар</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="add-product">
+    <h2>Добавить новый товар</h2>
+    <form action="#" method="POST">
+        <label for="product-name">Название товара:</label>
+        <input type="text" id="product-name" name="product-name" required>
+
+        <label for="product-description">Описание: (необязательно)</label>
+        <textarea id="product-description" name="product-description"></textarea>
+
+        <label for="product-price">Цена:</label>
+        <input type="number" id="product-price" name="product-price" required>
+
+        <label for="product-image">Изображение товара:</label>
+        <input type="url" id="product-image" name="product-image" required>
+
+        <button type="submit">Добавить товар</button>
+    </form>
+</div>
+<script src="./script.js"></script>
+
+</body>
+</html>
