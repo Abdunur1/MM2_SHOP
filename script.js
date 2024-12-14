@@ -1,3 +1,4 @@
+//это бургер меню
 let burger_menu = document.querySelector(".line"),
     menu = document.querySelector(".menu");
 
@@ -8,3 +9,5 @@ burger_menu.addEventListener("click", function () {
         menu.style.display = "none"; 
     }
 });
+
+
