@@ -35,7 +35,7 @@
 
 <div class="add-product">
     <h2>Добавить новый товар</h2>
-    <form action="#" method="POST">
+    <form action="./products.html" method="POST">
         <label for="product-name">Название товара:</label>
         <input type="text" id="product-name" name="product-name" required>
 
@@ -45,8 +45,8 @@
         <label for="product-price">Цена:</label>
         <input type="number" id="product-price" name="product-price" required>
 
-        <label for="product-image">Изображение товара:</label>
-        <input type="file" id="product-image" name="product-image" required>
+        <label for="product-image">Изображение (URL) товара:</label>
+        <input type="url" id="product-image" name="product-image" required>
 
         <button type="submit">Добавить товар</button>
     </form>

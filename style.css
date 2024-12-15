@@ -181,12 +181,17 @@ header .nav {
 
     .screach_input {
         width: 150px;
+        height: 30px;
         padding: 10px 15px;
         font-size: 16px;
         border: 2px solid #00aaff;
         border-radius: 5px 0 0 5px;
         outline: none;
         transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .screach_button {
+        height: 30px;
     }
     
 }
