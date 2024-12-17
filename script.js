@@ -46,10 +46,14 @@ div.innerHTML = `
 }
 }
 const data = 
-input_name_product.value == this.name
-product_image.value == this.src
-product_description.value == this.alt
-product_price.value == this.price
+[
+  [
+    product_image.value,
+    input_name_product.value,
+    product_price.value,
+    product_description.value,
+    ]
+]
 
 
 
@@ -58,3 +62,4 @@ product_price.value == this.price
 data.forEach((arr) => {
     new Rectangle(...arr).render();
   });
+
