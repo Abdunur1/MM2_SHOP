@@ -1,57 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Добавить товар | Магазин MM2</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
-    <link rel="icon" type="img/png" sizes="32x32" href="./img/favicon-32x32.png">
-    <link rel="icon" type="img/png" sizes="16x16" href="./img/favicon-16x16.png">
-    <link rel="manifest" href="./img/site.webmanifest">
-</head>
-<body>
-
-<header>
-    <div class="logo">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="img/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="img/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
         <h1>MM2 Shop</h1>
-    </div>
+      </div>
 
-    <nav class="nav">
-        
+      <nav class="nav">
         <label for="burger-toggle" class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </label>
 
         <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="products.html">Товары</a></li>
-            <li><a href="add-product.html">Добавить товар</a></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="products.html">Товары</a></li>
+          <li><a href="add-product.html">Добавить товар</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<div class="add-product">
-    <h2>Добавить новый товар</h2>
-    <form action="./products.html" >
+    <div class="add-product">
+      <h2>Добавить новый товар</h2>
+      <form action="./products.html">
         <label for="product-name">Название товара:</label>
-        <input type="text" id="product-name" name="product-name" required>
-
-        <label for="product-description">Описание: (необязательно)</label>
-        <textarea id="product-description" name="product-description"></textarea>
+        <input type="text" id="product-name" class="product-name" required />
 
         <label for="product-price">Цена:</label>
-        <input type="number" id="product-price" name="product-price" required>
+        <input
+          type="number"
+          id="product-price"
+          class="product-price"
+          required
+        />
 
         <label for="product-image">Изображение (URL) товара:</label>
-        <input type="url" id="product-image" name="product-image" required>
+        <input type="url" id="product-image" class="product-image" required />
 
-        <button type="submit">Добавить товар</button>
-    </form>
-</div>
-<script src="./script.js"></script>
-
-</body>
+        <button class="add-button" type="submit">Добавить товар</button>
+      </form>
+    </div>
+    <script src="./add.js"></script>
+  </body>
 </html>

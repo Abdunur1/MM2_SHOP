@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Магазин MM2</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
-<link rel="icon" type="img/png" sizes="32x32" href="./img/favicon-32x32.png">
-<link rel="icon" type="img/png" sizes="16x16" href="./img/favicon-16x16.png">
-<link rel="manifest" href="./img/site.webmanifest">
-</head>
-<body>
-
-<header>
-    <div class="logo">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="img/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="img/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
         <h1>MM2 Shop</h1>
-    </div>
+      </div>
 
-    <nav class="nav">
-        <input type="checkbox" id="burger-toggle" class="burger-toggle">
+      <nav class="nav">
+        <input type="checkbox" id="burger-toggle" class="burger-toggle" />
         <label for="burger-toggle" class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </label>
 
         <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="products.html">Товары</a></li>
-            <li><a href="add-product.html">Добавить товар</a></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="products.html">Товары</a></li>
+          <li><a href="add-product.html">Добавить товар</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<div class="content">
-    <h2>Добро пожаловать в магазин MM2!</h2>
-    <p>Здесь вы найдете лучшие товары для игры Murder Mystery 2.</p>
-</div>
-<script src="./script.js"></script>
-</body>
+    <div class="content">
+      <h2>Добро пожаловать в магазин MM2!</h2>
+      <p>Здесь вы найдете лучшие товары для игры Murder Mystery 2.</p>
+      <button class="button_products">
+        <a href="./products.html">перейти к покупкам</a>
+      </button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
